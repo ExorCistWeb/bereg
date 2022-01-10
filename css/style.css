@@ -155,8 +155,13 @@ body {
     margin: 0 0 32px 0;
 }
 
-.section__title span {
+.section__title a {
     color: #FAB846;
+    text-decoration: none;
+}
+
+.section__title a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 991px) {
@@ -637,6 +642,9 @@ body {
         width: 344px;
         font-size: 24px;
     }
+    .house__item p {
+        max-width: 550px;
+    }
 }
 
 .scroll_g {
@@ -701,6 +709,16 @@ body {
     width: 100% !important;
     margin: auto;
     position: static !important;
+}
+
+@media (max-width: 991px) {
+    .juicer-feed {
+        display: flex;
+        flex-direction: column;
+    }
+    .juicer-feed .feed-item a {
+        padding: 15px 0;
+    }
 }
 
 .modal-dialog {
