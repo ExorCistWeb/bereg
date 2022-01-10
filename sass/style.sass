@@ -1,0 +1,409 @@
+body 
+    font-family: 'Montserrat', sans-serif
+    line-height: 1.2
+    font-size: 21px
+    @media ( max-width: 991px )
+        font-size: 18px
+        .container
+            max-width: 540px
+
+.first
+    
+    background-image: url(../images/first-min.jpg)
+    background-position: center
+    background-size: cover
+
+.header
+    color: #FFFFFF
+    padding: 30px 0
+    .container
+        display: flex
+        align-items: center
+    &__tag
+        font-weight: 500
+        font-size: 18px
+        margin: 0 0 0 32px
+    
+    &__phone
+        font-weight: bold
+        font-size: 18px
+        color: #fff
+        margin: 0 0 0 auto
+        &:hover
+            color: #fff
+    
+    &__btn
+        color: #fff
+        margin: 0 0 0 30px
+    
+    @media ( max-width: 991px )
+        .container
+            flex-direction: column
+
+        &__phone
+            margin: 0 auto
+
+        &__tag
+            margin: 8px 0 12px 0
+
+        &__btn
+            margin: 12px auto
+
+        .social
+            margin: 0 auto
+            &__link
+                margin: 0 12px
+    
+        
+
+.logo
+    &__img
+        height: 80px
+    
+.social
+    margin: 0 0 0 auto
+    &__link
+        margin: 0 0 0 24px
+        object
+            height: 20px
+            pointer-events: none
+    
+
+.hero
+    color: #FFFFFF
+    padding: 70px 0 140px 0
+    &__title
+        font-weight: bold
+        font-size: 52px
+        margin: 0 0 1em 0
+        
+    &__description
+        font-family: 'Gilroy', sans-serif
+        margin: 0 0 42px 0
+    
+    &__btn
+        box-shadow: 3px 3px 18.75px rgba(0, 0, 0, 0.5)
+        width: 100%
+        max-width: 295px
+    @media ( max-width: 991px )
+        padding: 24px 0 96px 0
+        &__title
+            font-size: 24px
+
+.btn
+
+    border-radius: 0
+    font-family: 'Gilroy', sans-serif
+    font-size: 18px
+    
+    padding: 10px 32px
+    &_solid
+        background: #FAB846
+    
+    &_empty
+        border: 2px solid #FAB846
+        
+        font-weight: bold
+        padding: 6px 32px
+        &:hover
+            background: #FAB846
+            color: #fff
+    
+.section
+    &__title
+        font-size: 52px
+        font-weight: bold
+        margin: 0 0 32px 0
+        span
+            color: #FAB846
+    @media ( max-width: 991px )
+        &__title
+            font-size: 32px
+            margin: 0 0 24px 0
+
+.location
+    padding: 120px 0 116px 0
+    &__text
+
+        color: #1E2A3A
+        font-family: 'Gilroy', sans-serif
+
+    &__list
+        display: flex
+
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin: 0 86px 0 0
+        span
+            color: #1E2A3A
+ 
+            font-family: 'Gilroy', sans-serif
+    
+    &__img
+        width: 100%
+        filter: drop-shadow(11.25px 11.25px 37.5px rgba(0, 0, 0, 0.25))
+        
+    &__btn
+        margin: 42px 0 0 auto
+    @media ( max-width: 991px )
+        padding: 64px 0 64px 0
+ 
+        &__list
+            flex-direction: column
+            margin: 0 0 1em 0
+        &__item
+            margin: 0 0 12px 0
+            flex-direction: row
+            align-items: center
+    
+            img
+                height: 64px
+                margin: 0 12px 0 0
+            span
+                font-size: 15px
+
+.infrastructure
+    padding: 64px 0 104px 0
+    background: #1E2A3A
+    color: #fff
+    overflow: hidden
+
+
+    .container  
+        position: relative
+        font-family: 'Gilroy', sans-serif
+
+    &__label
+        position: absolute
+        top: 0
+        bottom: 56px
+        height: calc(100% - 56px)
+        left: calc(100%)
+        z-index: 1
+
+
+    &__text
+        margin: 0 0 50px 0
+
+    &__list
+        column-count: 2
+        list-style: none
+        padding: 0
+        margin: 0 0 42px 0
+
+
+    &__item
+        margin: 0 0 10px 0
+        &::before
+            content: url(../images/plus.svg)
+            margin: 0 20px 0 0
+
+    &__img
+        width: 100%
+        
+    @media ( max-width: 991px )
+        padding: 64px 0 64px 0
+        &__label
+            display: none
+        &__list
+            column-count: 1
+        &__img
+            margin: 0 0 15px 0
+
+.select
+    padding: 112px 0
+    &__text
+        font-family: 'Gilroy', sans-serif
+        font-size: 28px
+        margin: 0 0 56px 0
+
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__img-wrap
+        position: relative
+        img
+            width: 100%
+    
+    &__content
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        background: rgba(0, 0, 0, 0.2)
+        backdrop-filter: blur(7.5px)
+        padding: 16px 24px
+        color: #fff
+
+    &__name
+        font-size: 26px
+        font-weight: bold
+        margin: 0 0 8px 0
+    
+    &__desc
+        font-family: 'Gilroy', sans-serif
+        margin: 0
+
+    &__btn
+        margin: 46px 0 0 0
+
+    
+
+    &__form
+        display: flex
+        justify-content: space-between
+        margin: 64px 0 0 0
+        align-items: center
+        .form
+            &-group
+                position: relative
+                font-family: 'Gilroy', sans-serif
+                margin: 0 16px 0 0
+                label
+                    position: absolute
+                    top: 0.475rem
+                    left: 0.75rem
+                    font-size: 14px
+            &-control
+                height: calc(1.5em + 1.75rem + 2px)
+                padding: 1.375rem 0.75rem 0.375rem 0.75rem
+
+        .btn
+            &_promo
+                background: #1E2A3A
+                color: #fff
+
+            &:not(:last-child)
+                margin: 0 16px 0 0
+
+    @media ( max-width: 991px )
+        &__item
+            margin: 0 0 32px 0
+        &__text
+            font-size: 18px
+        &__btn
+            margin: 24px 0 0 0
+
+        &__form
+            flex-direction: column
+            margin: 32px 0 0 0
+            align-items: stretch
+            .form
+                &-group
+
+                    margin: 0 0 16px 0
+            .btn
+        
+                &:not(:last-child)
+                    margin: 0 0 12px 0
+
+            
+.house
+    padding: 16px 0
+    &__name
+        font-size: 37px
+        color: #1E2A3A
+        font-weight: bold
+        margin: 0 0 24px 0
+    &__description
+        font-size: 24px
+        margin: 0 0 32px 0
+        font-family: 'Gilroy', sans-serif
+    &__list
+        border: 2px solid #FAB846
+        padding: 8px 24px
+        margin: 40px 0 32px 0
+
+    &__img
+        width: 100%
+
+    &__item
+        display: flex
+        align-items: flex-start
+        margin: 12px 0
+        img
+            width: 60px
+            margin: 0 16px 0 0
+        p
+            margin: 0
+        
+    &__btn
+        margin: 0 auto
+
+    @media ( max-width: 991px )
+        &__name
+            font-size: 32px
+        &__description 
+            font-size: 18px
+        &__img
+            margin: 0 0 15px 0
+        &__list
+            padding: 6px 16px
+            margin: 24px 0 32px 0
+        &__item
+            margin: 8px 0
+            font-size: 15px
+            img
+                width: 40px
+
+.instagram
+    padding: 96px 0 116px 0
+    &__img
+        width: 100%
+        margin: 15px 0
+    
+    @media ( max-width: 991px )
+        padding: 64px 0
+        &__img
+            margin: 0 0 15px 0
+
+
+.contacts
+    padding: 100px 0 72px 0
+    background: #1E2A3A
+    color: #fff
+    &__title
+        margin: 0 0 1em 0
+    &__list
+        display: flex
+        flex-direction: column
+        margin: 0 0 44px 0
+    &__link
+        color: #fff
+        margin: 0 0 20px 0
+        object
+            margin: 0 12px 0 0
+        &:hover
+            color: #fff
+
+    &__btn
+        font-size: 28px
+        max-width: 295px
+        display: flex
+        justify-content: center
+
+    .social
+        margin: 44px 0 0 0
+        &__link
+            margin: 0 0 0 44px
+            object
+                height: 28px
+
+    iframe
+        width: 100%
+    @media ( max-width: 991px )
+        padding: 64px 0
+        &__list
+            margin: 0 0 24px 0
+        .social
+            display: flex
+            justify-content: center
+            margin: 24px 0 32px 0
+            &__link
+                margin: 0 12px
+                object
+                    height: 24px
