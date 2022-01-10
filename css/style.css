@@ -500,6 +500,7 @@ body {
 .contacts__link {
     color: #fff;
     margin: 0 0 20px 0;
+    max-width: 480px;
 }
 
 .contacts__link object {
@@ -613,6 +614,7 @@ body {
     }
     .location__btn {
         margin: 40px 60px 0 auto;
+        padding: 15px 69px;
     }
     .infrastructure__text {
         font-size: 28px;
@@ -644,6 +646,13 @@ body {
     }
     .house__item p {
         max-width: 550px;
+    }
+    .house__btn {
+        margin: 0 auto;
+        max-width: 393px;
+        width: 100%;
+        font-size: 24px;
+        padding: 16px 69px
     }
 }
 
